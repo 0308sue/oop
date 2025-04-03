@@ -18,7 +18,8 @@ int main()
 
     fin.close();
 
-    cout <<  "sum의 값은 " << sum <<  endl;
+    cout <<  "sum의 값은 " << sum <<  endl ;
+    
     
     return 0;
 
