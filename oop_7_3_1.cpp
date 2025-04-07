@@ -10,15 +10,13 @@ int main(){
         cin >> size;
     } while (size < 2 or size > 10);
 
-    int i = 1;
-    while(i <= size){
+    for(int i = 1; i <= size; i++){
         int j = 1;
         while (j <= size){
             cout << setw(4) << i*j;
             j++;
         }
         cout << endl;
-        i++;
     }
     
     
