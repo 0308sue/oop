@@ -16,14 +16,14 @@ int main()
         return 0;
     }
 
-    for(int i = 2; i <= num; i++){
+    for(int i = 2; i < num; i++){
         if(num % i == 0){
             cout << num << " --> 합성수" << endl;
             cout << i << " 로 나누어집니다." << endl;
             return 0;
         }
-        cout << num << " --> 소수" << endl;
     }
+    cout << num << " --> 소수" << endl;
     
     
     return 0;

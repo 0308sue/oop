@@ -10,6 +10,17 @@ int main(){
         cin >> size;
     } while (size < 2 or size > 10);
 
+    cout << "내부만 while문으로 변경" << endl;
+    for(int i = 1; i <= size; i++){
+        int j = 1;
+        while (j <= size){
+            cout << setw(4) << i*j;
+            j++;
+        }
+        cout << endl;
+    }
+
+    cout << "모두 while문으로 변경" << endl;
     int i = 1;
     while(i <= size){
         int j = 1;
