@@ -11,25 +11,25 @@ int main() {
     }
 
     char ch;
-    int spaceCount = 0;
-    int newlineCount = 0;
-    int otherCount = 0;
+    int scnt = 0;
+    int lcnt = 0;
+    int wcnt = 0;
 
     while (file.get(ch)) { // 파일에서 문자 하나씩 읽기
         if (ch == ' ') {
-            spaceCount++;
+            scnt++;
         } else if (ch == '\n') {
-            newlineCount++;
+            lcnt++;
         } else {
-            otherCount++;
+            wcnt++;
         }
     }
 
     file.close(); // 파일 닫기
 
-    cout << "스페이스 수: " << spaceCount << endl;
-    cout << "개행 수: " << newlineCount << endl;
-    cout << "그 외 문자 수: " << otherCount << endl;
+    cout << scnt 
+    << " " << lcnt
+    << " " << wcnt << endl;
 
     return 0;
 }
