@@ -15,8 +15,6 @@ int main()
         }
     }
     
-    
-    
     cout << "총 " << cnt << "개" << endl;
     for (vector<int>::iterator it = nums.begin(); it != nums.end() ; ++it)
 	{

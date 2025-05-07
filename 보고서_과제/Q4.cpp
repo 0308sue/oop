@@ -17,8 +17,6 @@ int main()
         chk = true;
     }
     
-    
-    
     cout << cnt << "개" << endl;
     return 0;
 }

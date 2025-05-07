@@ -1,25 +1,23 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
-#include <vector> 
-
 using namespace std;
 
-string n;
-int i = 0;
-vector<string> word;
-
 int main() {
-    while(true){
-        cin >> n;
-        if(n == "*") break;
-        word.push_back(n);
-    }
+    string a, b, c;
 
-    std::sort(word.begin(), word.end());
-    for (vector<string>::iterator it = word.begin(); it != word.end(); ++it){
-    		cout << *it << " ";
-    	}
+    while (true) {
+        cin >> a;
+
+        if (a == "*") break;  // 종료 조건
+
+        cin >> b >> c;
+
+        string words[3] = {a, b, c};
+        sort(words, words + 3);  // 사전 순 정렬
+
+        cout << words[0] << " " << words[1] << " " << words[2] << endl;
+    }
 
     return 0;
 }

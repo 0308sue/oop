@@ -18,6 +18,6 @@ int main()
     }while(n != 0);
     
     cout << enc << " " << (float)ens / enc << " " 
-    << onc << " " << (float)ons / onc ;
+    << onc << " " << ((onc == 0) ? 0 :((float)ons / onc)) ;
     return 0;
 }
